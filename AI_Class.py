@@ -3,7 +3,7 @@
 """
 Please note, this code is only for python 3+. If you are using python 2+, please modify the code accordingly.
 @author: JIN
-Data source Kaggel Amazon Image
+Class definition with tensorflow
 classification: haze, 
 Image type: jpg
 """
@@ -15,7 +15,7 @@ import numpy as np
 from skimage.external import tifffile as im
 import os
 
-# number 1 to 10 data
+# basic class
 class ArtificialIntelligence(object):
     def __init__(object,dimensions):
         pass
@@ -29,18 +29,20 @@ class ArtificialIntelligence(object):
     def Read_Train_sets(self,Direcoty):
         pass
     
+#    define classification class
 class Classification(ArtificialIntelligence):
     def __init__(object,dimension):
         pass
-    
+
+#define Regression class    
 class Regression(ArtificialIntelligence):
     def __init__(object,dimension):
         pass
-    
+# define cluster class
 class cluster(ArtificialIntelligence):
     def __init__(object,dimension):
         pass
-    
+# define Image classification class
 class ImageClassification(Classification):
     # image information
     def __init__(object,dimensions):
@@ -50,7 +52,7 @@ class ImageClassification(Classification):
         self.N_TrainSet = N_TrainSet        
         self.Image_Type = Type        
         self.MaxTrainLen = 40479              
-
+# define Image classification class with CNN_tensorflow
 class TensorflowCNNImageClassification(ImageClassification):
     def __init__(self,xpixls,ypixls,layers,Max_Samples,Type = ".tif"):
         self.xpixls = xpixls
@@ -348,7 +350,6 @@ ImageInstance.SetConv2([4, 4, 32, 32]) #16X16X32
 ImageInstance.SetFun1([32*16*16, 16])
 # define Function2 Layer
 ImageInstance.SetFun2([16, 1])
-#
 
 
 ImageInstance.CommitteTraining(0.1,run_times = 20,saveFileName = r"D:\Kaggle\Understanding the Amazon from Space\Split\haze")
