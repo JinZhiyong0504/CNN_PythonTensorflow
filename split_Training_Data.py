@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Jul 14 19:46:17 2017
-
+split raw training data into separate file
 @author: JIN
 """
 

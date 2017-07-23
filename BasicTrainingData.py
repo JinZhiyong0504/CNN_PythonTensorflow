@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Jul  3 17:35:03 2017
-
+# convert raw data into one-hot-dummy data structure
 @author: JIN
 """
 ##Train_Extended.loc[Train_Extended['image_name']=df_train['image_name']]
