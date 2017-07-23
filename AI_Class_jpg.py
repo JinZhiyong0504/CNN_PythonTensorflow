@@ -3,9 +3,8 @@
 """
 Please note, this code is only for python 3+. If you are using python 2+, please modify the code accordingly.
 @author: JIN
-Data source Kaggel Amazon Image
-classification: haze, 
-Image type: jpg
+
+this is for jpg training set
 """
 import tensorflow as tf
 import pandas as pd
